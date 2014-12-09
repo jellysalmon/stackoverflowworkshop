@@ -6,6 +6,7 @@ RSpec.describe Question, :type => :model do
     expect(question1).to be_valid
   end
     it "should have_many answers" do
+      should have_many(:answers)
     end
 
 
